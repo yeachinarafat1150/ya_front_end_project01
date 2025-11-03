@@ -57,11 +57,47 @@ header{
 
 #Cover-image-section{
     
-    width: 60%;
+    width: 50%;
     margin: 50px auto;
 }
 
 #Cover-image-section img{
     width: 100%;
     
+}
+
+#search-section{
+    width: 40%;
+    margin: 50px auto;
+}
+
+#search-section h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#search-container{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(238, 234, 181);
+    display: flex;
+}
+#search-bar{
+    width: 70%;
+    
+}
+#search-bar > input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 60%;
+    background-color: rgb(238, 234, 181);
+}
+#search-button{
+    width: 30%;
+    
+    display: flex;
+    justify-content: end;
 }
