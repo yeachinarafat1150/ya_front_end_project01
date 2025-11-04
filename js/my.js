@@ -1,8 +1,25 @@
 function handelSearch() {
+
+// loding animation Starts
+
+    loadingAnimationToggle(true);
+
     const searchInputEliment = document.getElementById("search-input-field") ;
     const searchInputValue = searchInputEliment.value ;
     loadPhone(searchInputValue);
 }
+
+function loadingAnimationToggle(isLoading){
+    const loadingAnimation = document.getElementById("loader-animation");
+    if(isLoading){
+        loadingAnimation.classList.remove("hidden");
+    }
+    else{
+        loadingAnimation.classList.add("hidden");
+    }
+}
+
+
 
 const loadPhone =async (searchText) => {
      const res = await fetch(
@@ -28,7 +45,7 @@ const displayPhone = (data) => {
     productCard.classList.add("card");
 
     productCard.innerHTML = `
-    <div class="card-image">
+    <div class="card-image"> 
                     <img src=${Phone.image} alt="Phone-image">
                 </div>
                 <div>
@@ -47,5 +64,9 @@ const displayPhone = (data) => {
     cardcontainer.appendChild(productCard);
 
    });
+//    loding Animation ends hera
+
+    loadingAnimationToggle(false);
+
 };
     
