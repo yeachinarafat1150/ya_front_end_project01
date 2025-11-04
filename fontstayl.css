@@ -156,8 +156,13 @@ margin-bottom: 20px;
     justify-content: center;
 }
 
+
 #footer{
-    padding: 40px;
+    
+    padding: 180px;
+    margin: 0 auto;
+    background-color: #faebeb;
+    
 }
 
 .top {
@@ -183,7 +188,7 @@ margin-bottom: 20px;
     color: black;
 }
 button:hover {
-  background-color: #0d5cc4;
+  background-color: #13b6f7;
 }
 
 hr {
@@ -207,5 +212,5 @@ hr {
 }
 
 .col p:hover {
-  color: #1877f2;
+  color: #539dfd;
 }
